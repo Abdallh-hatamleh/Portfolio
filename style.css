@@ -1,4 +1,4 @@
-body { background-color: #672F9E;}
+body { background-image: url(./Assets/BG.jpg);}
 
 nav { justify-content: space-between; background-color: #171717; align-items: center; padding:0px 22px;
 border-radius: 0 0 25px 25px;}
@@ -16,9 +16,9 @@ nav div {color: white; border-radius: 60px;padding: 5px 10px;font-size: larger; 
 
 nav .clickable:hover {background-color:#672F9E ;}
 
-a {text-decoration: none;}
+a {text-decoration: none; color: white;}  
 
-footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; color: white; }
+footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; color: white; border-radius: 25px 25px 0 0;}
 
 .styler {    display: flex;
     justify-content: space-around;
@@ -32,6 +32,18 @@ footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; co
         align-content: flex-start;
         flex-wrap: wrap;}
 
-.social-icons {width: 12px; height: 12px;}
+.social-icons {width: 15px; height: 15px;}
 
 .c-orange {color: #FD853A;}
+
+.bk-orange {background-color: #FD853A;}
+
+.bk-purple {background-color: #672F9E;}
+
+.contas {margin: 0px 20px;}
+
+.contas-title {margin: 0px 20px;}
+
+.d-flex span{ margin: 2px 6px;}
+
+.black-to-white {filter: invert(100%) sepia(1%) saturate(558%) hue-rotate(143deg) brightness(118%) contrast(100%);}
