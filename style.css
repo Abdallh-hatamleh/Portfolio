@@ -105,7 +105,7 @@ grid:
 
 .chat {background-color: #171717;}
 
-.chat-bubble {background-color: #FD853A; margin: 5px; padding: 7px 12px; border-radius: 15px;}
+.chat-bubble {background-color: #FD853A; margin: 3% 4px; padding: 7px 12px; border-radius: 15px;}
 
 .send-bar {background-color: #C1C1C1; padding: 4px;}
 
@@ -117,13 +117,26 @@ grid:
 
 .list-main {background-color: #171717; padding: 17px; display: flex; align-items: start; flex-direction: column; justify-content: flex-start; max-height: max-content;}
 
-.chat-bubble-v2 {background-color: #FD853A;border-radius: 25px; padding: 15px; margin: 25px 5px;}
+.chat-bubble-v2 {background-color: #FD853A;border-radius: 25px; padding: 15px; margin: 3% 4px;}
 
 .chat-bubble-p1 {text-align: center; border-bottom: 1px solid;}
 
 .chat-bubble-p2 {text-align: center;}
 
 .degrees-window {border: 2px #FD853A solid;}
+
+.projects-grid {display: grid; grid: 
+'cpp port'
+'cpp port'
+'cpp wip'; margin:5% 10% 5% 10%; column-gap: 5%;}
+
+.cpp-window {grid-area: cpp; width: fit-content; height: fit-content; border: 1px solid #FD853A;}
+
+.portfolio-window{grid-area: port; width: fit-content; height: fit-content;  border: 1px solid #FD853A}
+
+.wip-window {grid-area: wip; width: fit-content;height: fit-content; border: 1px solid #FD853A}
+
+.chat-image {background-color: #3E184B; border-radius: 15px; overflow: hidden; margin: 3% 4px;} 
 
 @media only screen and (max-width: 900px) {
     nav div {font-size: 0.5rem;}
