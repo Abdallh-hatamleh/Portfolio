@@ -1,9 +1,9 @@
 body { background-image: url(./Assets/BG.jpg);}
 
-nav { justify-content: space-between; background-color: #171717; align-items: center; padding:0px 22px;
+nav { justify-content: space-between; background-color: #171717; align-items: center; padding:0px 0.008%;
 border-radius: 0 0 25px 25px;}
 
-nav div {color: white; border-radius: 60px;padding: 5px 10px;font-size: larger; }
+nav div {color: white; border-radius: 60px;padding: 5px 10px;font-size: 1rem; }
 
 .selected{background-color: #FD853A; }
 
@@ -18,7 +18,7 @@ nav .clickable:hover {background-color:#672F9E ;}
 
 a {text-decoration: none; color: white;}  
 
-footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; color: white; border-radius: 25px 25px 0 0;}
+footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; color: white; border-radius: 25px 25px 0 0; font-size: 0.7rem;} 
 
 .styler {    display: flex;
     justify-content: space-around;
@@ -55,7 +55,7 @@ footer {position: absolute; bottom: 0; width: 100%;background-color: #171717; co
 .line {box-sizing: border-box; height: 16px; width: 16px; border: 1px solid #D2D2D2;border-top:none ;
 border-left: none; border-right: none;}
 
-.top-bar {background-color: #181818; border-radius: 15px 15px 0 0; overflow: hidden;}
+.top-bar {background-color: #101010; border-radius: 15px 15px 0 0; overflow: hidden;}
 
 .top-bar-title {color: white; margin: 0 6px;}
 
@@ -69,11 +69,13 @@ border-left: none; border-right: none;}
 
 .vscode-text{color: #672F9E; margin: 3px;}
 
-main {margin: 25px 7px; display: grid;
-grid:
-'vs vs wn'
-'vs vs cht'
-'vs vs .';}
+main {margin: 25px 7px; }
+
+.home-grid {display: grid;
+    grid:
+    'vs vs wn'
+    'vs vs cht'
+    'vs vs .';}
 
 .top-bar-buttons {margin-top: 6px; margin-right: 6px;}
 
@@ -112,3 +114,19 @@ grid:
 .message-window {grid-area: cht; width: 80%; position: relative;
     right: 39px;
     top: 11px; border: 1px solid #FEB181;}
+
+.list-main {background-color: #171717; padding: 17px; display: flex; align-items: start; flex-direction: column; justify-content: flex-start; max-height: max-content;}
+
+.chat-bubble-v2 {background-color: #FD853A;border-radius: 25px; padding: 15px; margin: 25px 5px;}
+
+.chat-bubble-p1 {text-align: center; border-bottom: 1px solid;}
+
+.chat-bubble-p2 {text-align: center;}
+
+.degrees-window {border: 2px #FD853A solid;}
+
+@media only screen and (max-width: 900px) {
+    nav div {font-size: 0.5rem;}
+
+    main {margin-bottom: 20%;}
+}
