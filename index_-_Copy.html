@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Assets/logo.png">
+    <style>
+    </style>
+</head>
+
+<body>
+    <nav class="d-flex">
+        <!-- Navbar -->
+        <div class="any3 "><img src="./Assets/logo.png" alt=""></div>
+        <div class="any1 selected">Home</div>
+        <a href="Education.html">
+            <div class="any2 clickable">Education</div>
+        </a>
+        <div class="any4">Abdallh Hatamleh</div>
+        <div class="any6 clickable">About</div>
+        <a href="Projects.html">
+            <div class="any7 clickable">Project</div>
+        </a>
+        <div class="any5"><img src="./Assets/profile.png" alt=""></div>
+        <!-- Navbar -->
+    </nav>
+    <main class="home-grid">
+        <div class="window col-8 chat-window col-md-12 draggable">
+            <div class="d-flex top-bar justify-content-between">
+                <div class="top-bar-title">About</div>
+                <div class="top-bar-buttons d-flex">
+                    <div class="line xo-icons"></div>
+                    <div class="square xo-icons"></div>
+                    <img src="./Assets/X.png" class="xo-icons">
+                </div>
+            </div>
+            <div class="main-chat-window">
+                <div class="vscode-text t1">&lt;I'm&gt;</div>
+                <div class="vscode-text t2">&lt;An Artificial Intelligence graduate&gt;</div>
+                <div class="vscode-text t3">&lt;A Web development trainee&gt;</div>
+                <div class="vscode-text t4">&lt;A game development hobbyist&gt;</div>
+                <div class="vscode-text t5">&lt;And so much more&gt;</div>
+                <div class="vertical-line v1"></div>
+                <div class="vertical-line v2"></div>
+                <div class="vertical-line v3"></div>
+                <div class="vertical-line v4"></div>
+                <div class="vertical-line v5"></div>
+            </div>
+        </div>
+        <div class="window welcome-window col-4 col-md-6 draggable">
+            <div class="d-flex top-bar justify-content-between">
+                <div class="top-bar-title d-flex align-items-center">
+                    <img src="./Assets/warning.webp" alt="">
+                    Welcome!
+                    <img src="./Assets/warning.webp" alt="">
+                </div>
+                <div class="top-bar-buttons d-flex">
+                    <div class="line xo-icons"></div>
+                    <div class="square xo-icons"></div>
+                    <img src="./Assets/X.png" class="xo-icons">
+                </div>
+            </div>
+            <div class="welcome-main">
+                <div>Welcome to my page!<br> do you want to start by checking out my projects?</div>
+                <a href="/Projects.html">
+                    <div class="projects-button">Go to projects!</div>
+                </a>
+            </div>
+        </div>
+        <div class="window col-3 message-window col-md-6 draggable">
+            <div class="d-flex top-bar justify-content-between">
+                <div class="top-bar-title">Hello there!</div>
+                <div class="top-bar-buttons d-flex">
+                    <div class="line xo-icons"></div>
+                    <div class="square xo-icons"></div>
+                    <img src="./Assets/X.png" class="xo-icons">
+                </div>
+            </div>
+            <div class="chat d-flex flex-column align-items-start">
+                <div class="chat-bubble">Hello!</div>
+                <div class="chat-bubble">My name is abdallh hatamleh</div>
+                <div class="chat-bubble">I'm a developer looking for new experiences</div>
+            </div>
+            <div class="send-bar d-flex justify-content-end">
+                <div class="type-box">Hire me!</div>
+                <img src="/Assets/Send.png" alt="" height="32px" width="32px">
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start position-fixed bottom-0">
+        <!-- Grid container -->
+        <div class="container-fluid m-0">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 stylel">
+                    <h5 class="text-uppercase">contact me on social media!</h5>
+                    <div class="social-icons-cont">
+                        <a href="https://www.linkedin.com/in/abdallh-hatamleh-4691b0308/"><img
+                                src="./Assets/linkedin.png" alt="" class="social-icons black-to-white"></a>
+                        <a href=""><img src="./Assets/face.png" alt="" class="social-icons"></a>
+                        <a href=""><img src="./Assets/instagram.png" alt="" class="social-icons black-to-white"></a>
+                        <a href=""><img src="./Assets/mail.png" alt="" class="social-icons black-to-white"></a>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase c-orange contas-title m-1">Contact</h5>
+
+                    <div class="d-flex">
+                        <span>
+                            +962790715967
+                        </span><span>
+                            Abdallh.a.hatamleh@gmail
+                        </span><span>
+                            <a
+                                href="https://abdallh-hatamleh.github.io/Portfolio/">https://abdallh-hatamleh.github.io/Portfolio/</a>
+                        </span>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+    </footer>
+
+    <script>
+        // Make the draggable windows
+        const draggableWindows = document.querySelectorAll('.draggable');
+        let offsetX, offsetY;
+        let isDragging = false;
+
+        draggableWindows.forEach(window => {
+            window.addEventListener('mousedown', startDragging);
+        });
+        document.addEventListener('mousemove', dragWindow);
+        document.addEventListener('mouseup', stopDragging);
+
+        function startDragging(e) {
+            isDragging = true;
+            const boundingRect = this.getBoundingClientRect();
+            offsetX = e.clientX - boundingRect.left;
+            offsetY = e.clientY - boundingRect.top;
+        }
+
+        function dragWindow(e) {
+            if (!isDragging) return;
+            draggableWindows.forEach(window => {
+                const newX = e.clientX - offsetX;
+                const newY = e.clientY - offsetY;
+                window.style.left = newX + 'px';
+                window.style.top = newY + 'px';
+            });
+        }
+
+        function stopDragging() {
+            isDragging = false;
+        }
+    </script>
+</body>
+
+</html>

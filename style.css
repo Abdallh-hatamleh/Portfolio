@@ -75,7 +75,7 @@ main {margin: 25px 7px; }
     grid:
     'vs vs wn'
     'vs vs cht'
-    'vs vs .';}
+    'vs vs .'; margin: 5% 2%; }
 
 .top-bar-buttons {margin-top: 6px; margin-right: 6px;}
 
@@ -109,7 +109,7 @@ grid:
 
 .send-bar {background-color: #C1C1C1; padding: 4px;}
 
-.type-box {background-color: #E2E2E2; padding: 1px 80px 1px 5px; border-radius: 15px;}
+.type-box {background-color: #E2E2E2; padding: 1px 80px 1px 5px; border-radius: 15px; width: 100%; margin: auto auto auto 3%;}
 
 .message-window {grid-area: cht; width: 80%; position: relative;
     right: 39px;
@@ -138,8 +138,39 @@ grid:
 
 .chat-image {background-color: #3E184B; border-radius: 15px; overflow: hidden; margin: 3% 4px;} 
 
+.home {display: flex; flex-direction: column; justify-content: space-around;}
+
 @media only screen and (max-width: 900px) {
     nav div {font-size: 0.5rem;}
 
-    main {margin-bottom: 20%;}
+    nav {overflow: hidden;}
+
+    .home-grid {grid: 'wn cht'
+                      'vs vs';}
+    .welcome-window {top: 0px; right: 0px; height: fit-content;}
+
+    .message-window {top:0px; right: 0px; width: 100%;}
+
+    .main-chat-window{font-size: 1.5rem !important;}
+
+    .projects-grid {grid: 'cpp' 'port' 'wip'; margin-bottom: 50% !important; row-gap: 3px; justify-content: center;}
+
+    /* test to see if media triggers 
+    main {background-color: #000000;} */
+}
+
+@media only screen and (min-width: 900px) {
+    .home-grid {margin: 5% 5% 2% 5%;}
+    
+    nav div{font-size: 2rem;}
+
+    footer {font-size: 1rem;}
+    
+    .main-chat-window{font-size: 4rem !important;}
+
+    .chat-bubble-v2 {font-size: 2rem !important;}
+
+    .chat-bubble {font-size: 2rem !important;}
+
+    .top-bar-title {font-size: 2rem;}
 }
