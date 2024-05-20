@@ -4,74 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./Assets/logo.png">
 </head>
 
-<body>
+<body class="home">
     <nav class="d-flex">
-        <div class="any3"><img src="./Assets/logo.png" alt=""></div>
-        <a href="index.html">
-            <div class="any1 clickable">Home</div>
+        <!-- Navbar -->
+        <div class="any3 "><img src="./Assets/logo.png" alt=""></div>
+        <div class="any1 clickable">Home</div>
+        <a href="Education.html">
+            <div class="any2 clickable">Education</div>
         </a>
-        <div class="any2 selected">Education</div>
         <div class="any4">Abdallh Hatamleh</div>
-        <a href="/About.html">
-            <div class="any6">About</div>
-        </a>
+        <div class="any6 selected">About</div>
         <a href="Projects.html">
-            <div class="any7 clickable">Projects</div>
+
+            <div class="any7 clickable">Project</div>
         </a>
         <div class="any5"><img src="./Assets/profile.png" alt=""></div>
+        <!-- Navbar -->
     </nav>
-    <main class="d-flex justify-content-around align-items-center flex-wrap education-specific">
-        <div class="window col-lg-3 col-md-12 degrees-window">
+    <main>
+        <div class="window about-window">
             <div class="d-flex top-bar justify-content-between">
-                <div class="top-bar-title">Degrees</div>
+                <div class="top-bar-title">About</div>
                 <div class="top-bar-buttons d-flex">
                     <div class="line xo-icons"></div>
                     <div class="square xo-icons"></div>
                     <img src="./Assets/X.png" class="xo-icons">
                 </div>
-
             </div>
             <div class="list-main">
-                <div class="chat-bubble-v2">
-                    <div class="chat-bubble-p1">2019</div>
-                    <div class="chat-bubble-p2">High school diploma <br> Aqaba secondary school</div>
-                </div>
-                <div class="chat-bubble-v2">
-                    <div class="chat-bubble-p1">2019 - 2024</div>
-                    <div class="chat-bubble-p2">Bachelor's in Artificial Intelligence <br> Aqaba University of Technology</div>
-                </div>
+                <div class="chat-bubble">I'm an AI graduate born in the year of 2000,<br>with a desire to learn more
+                    about the tech world </div>
             </div>
         </div>
-        <div class="window col-lg-3 col-md-12 degrees-window">
+        <div class="window about-window">
             <div class="d-flex top-bar justify-content-between">
-                <div class="top-bar-title">Courses</div>
+                <div class="top-bar-title">Hobbies</div>
                 <div class="top-bar-buttons d-flex">
                     <div class="line xo-icons"></div>
                     <div class="square xo-icons"></div>
                     <img src="./Assets/X.png" class="xo-icons">
                 </div>
-
             </div>
-            <div class="list-main">
-                <div class="chat-bubble-v2">
-                    <div class="chat-bubble-p1">2022</div>
-                    <div class="chat-bubble-p2">Matlab Course <br> Aqaba University of technology</div>
+            <div class="list-main d-flex flex-row chat-margins">
+                <div class="chat-bubble">Competitive E-sports</div>
+                <div class="chat-bubble">Chess</div>
+                <div class="chat-bubble">Swimming</div>
+                <div class="chat-bubble">Game development</div>
+            </div>
+        </div>
+        <div class="window about-window3 col-9">
+            <div class="d-flex top-bar justify-content-between">
+                <div class="top-bar-title">Skills</div>
+                <div class="top-bar-buttons d-flex">
+                    <div class="line xo-icons"></div>
+                    <div class="square xo-icons"></div>
+                    <img src="./Assets/X.png" class="xo-icons">
                 </div>
-                <div class="chat-bubble-v2">
-                    <div class="chat-bubble-p1">2022</div>
-                    <div class="chat-bubble-p2">Python Course<br> Aqaba University of Technology</div>
-                </div>
-                <div class="chat-bubble-v2">
-                    <div class="chat-bubble-p1">2024 - ongoing</div>
-                    <div class="chat-bubble-p2">Web development Bootcamp<br>Orange coding academy</div>
-                </div>
+            </div>
+            <div class="list-main d-flex flex-row flex-wrap skills">
+                <div class="chat-bubble">Quick learner</div>
+                <div class="chat-bubble">Teamwork</div>
+                <div class="chat-bubble">Problem solver</div>
+                <div class="chat-bubble">Leadership skills</div>
+                <div class="chat-bubble">Familiar with AI algorithms</div>
+                <div class="chat-bubble">C++</div>
+                <div class="chat-bubble">C#</div>
+                <div class="chat-bubble">Python</div>
+                <div class="chat-bubble">HTML</div>
+                <div class="chat-bubble">Css</div>
             </div>
         </div>
     </main>
@@ -82,7 +89,7 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 stylel">
-                    <h6 class="text-uppercase">contact me on social media!</h6>
+                    <h5 class="text-uppercase">contact me on social media!</h5>
                     <div class="social-icons-cont">
 						<a href="https://www.linkedin.com/in/abdallh-hatamleh-4691b0308/" target="_blank"><img
 								src="./Assets/linkedin.png" alt="" class="social-icons black-to-white"></a>
@@ -96,7 +103,7 @@
 
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h6 class=" c-orange contas-title m-1">Contact</h6>
+                    <h5 class="text-uppercase c-orange contas-title m-1">Contact</h5>
 
                     <div class="d-flex">
                         <span>

@@ -140,10 +140,26 @@ grid:
 
 .home {display: flex; flex-direction: column; justify-content: space-around;}
 
+.about-window {width: fit-content;border: 1px solid #FD853A; margin: 15px}
+
+.about-window.top-bar {width: 50px;}
+
+.about-window3.top-bar {width: 50px;}
+
+.skills .chat-bubble {margin: 0.6% 1% !important;}
+
+.flexrow {display: flex; flex-direction: row;}
+
+.about-window3 {border: 1px solid #FD853A; margin: 15px;}
+
 @media only screen and (max-width: 900px) {
     nav div {font-size: 0.5rem;}
 
     nav {overflow: hidden;}
+
+    .any3 img {width: 35px;}
+
+    .any5 img {width: 50px; top: -19px !important;}
 
     .home-grid {grid: 'wn cht'
                       'vs vs';}
@@ -154,6 +170,8 @@ grid:
     .main-chat-window{font-size: 1.5rem !important;}
 
     .projects-grid {grid: 'cpp' 'port' 'wip'; margin-bottom: 50% !important; row-gap: 3px; justify-content: center;}
+
+    .education-specific{ margin: 10px 4px 40% 4px;}
 
     /* test to see if media triggers 
     main {background-color: #000000;} */
@@ -166,11 +184,9 @@ grid:
 
     footer {font-size: 1rem;}
     
-    .main-chat-window{font-size: 4rem !important;}
+    .main-chat-window{font-size: 3.4rem !important;}
 
     .chat-bubble-v2 {font-size: 2rem !important;}
 
     .chat-bubble {font-size: 2rem !important;}
-
-    .top-bar-title {font-size: 2rem;}
 }
