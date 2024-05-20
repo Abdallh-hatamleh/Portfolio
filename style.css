@@ -155,23 +155,27 @@ grid:
 @media only screen and (max-width: 900px) {
     nav div {font-size: 0.5rem;}
 
-    nav {overflow: hidden;}
+    /* nav {overflow: hidden;} */
 
     .any3 img {width: 35px;}
 
     .any5 img {width: 50px; top: -19px !important;}
 
     .home-grid {grid: 'wn cht'
-                      'vs vs';}
+                      'vs vs'; margin-bottom: 20%;}
     .welcome-window {top: 0px; right: 0px; height: fit-content;}
 
     .message-window {top:0px; right: 0px; width: 100%;}
 
     .main-chat-window{font-size: 1.5rem !important;}
 
-    .projects-grid {grid: 'cpp' 'port' 'wip'; margin-bottom: 50% !important; row-gap: 3px; justify-content: center;}
+    .projects-grid {grid: 'cpp' 'port' 'wip'; margin-bottom: 50% !important; row-gap: 2%; justify-content: center;}
 
     .education-specific{ margin: 10px 4px 40% 4px;}
+
+    .education-specific .window {margin: 10px 0px}
+
+    .about-main {margin-bottom: 20%;}
 
     /* test to see if media triggers 
     main {background-color: #000000;} */
