@@ -424,6 +424,10 @@ main {
     margin: 15px;
 }
 
+.greycol {
+    color: #6F6F6F;
+}
+
 @media only screen and (max-width: 900px) {
     nav div {
         font-size: 0.5rem;
